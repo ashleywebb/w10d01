@@ -52,11 +52,24 @@
 //     console.log(b)
 // }
 
-for (c = 0; c <= 100; c++) {
-    console.log('This is the song that never ends')
-    console.log(c)
-}
+// for (c = 0; c <= 100; c++) {
+//     console.log('This is the song that never ends')
+// }
 
 // for (d = 1000; d > 0; d++){
 //     console.log(i)
 // }
+
+const random = require('./utilities/random');
+for (let i = 0; i < 10; i++) {
+    console.log(random(100, 200) );
+}
+
+const circle = require('./utilities/circle');
+console.log( circle.area(50) );  // 7853.98...
+console.log( circle.circumference(75) );  // 471.23...
+
+const capitalize = require('./capitalize/index');
+console.log(capitalize('abc def'));
+
+
